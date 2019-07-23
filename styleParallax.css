@@ -1,0 +1,189 @@
+.header__img-wrap {
+    background-image: url(img/2x/bg_main@2x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    position: absolute;
+    left: -9vw;
+    /* top: 3vh; */
+    z-index: 1;
+    width: 115vw;
+    height: 110vh;
+}
+.img_1 {
+    background-image: url(img/2x/bg_1@2x.png);
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute;
+    background-position: 50% 100%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.img_2 {
+    background-image: url(img/2x/bg_2@2x.png);
+    background-repeat: no-repeat;
+    z-index: 3;
+    position: relative;
+    background-position: 50% 100%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+.img_3 {
+    background-image: url(img/2x/bg_3@2x.png);
+    background-repeat: no-repeat;
+    z-index: 4;
+    position: relative;
+    background-position: 50% 100%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+.img_4 {
+    background-image: url(img/2x/bg_4@2x.png);
+    background-repeat: no-repeat;
+    z-index: 5;
+    position: relative;
+    background-position: 50% 100%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+.img_5 {
+    background-image: url(img/2x/bg_front@2x.png);
+    background-repeat: no-repeat;
+    z-index: 6;
+    position: relative;
+    background-position: 50% 100%;
+    background-size: 120%;
+    height: 100%;
+    left: -13vw;
+    bottom: -14vh;
+    width: 142vw;
+    transform-style: preserve-3d;
+}
+.img_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+/* .header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/newMountain/2x/bg_main@2x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    position: relative;
+    left: -3vw;
+    top: -3vh;
+    z-index: 1;
+    width: 106vw;
+    height: 106vh;
+}
+.img_1 {
+    background-image: url(img/newMountain/2x/bg_1@2x.png);
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute;
+    background-position: 50% 50%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.img_2 {
+    background-image: url(img/newMountain/2x/bg_2@2x.png);
+    background-repeat: no-repeat;
+    z-index: 3;
+    position: relative;
+    background-position: 50% 50%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+.img_3 {
+    background-image: url(img/newMountain/2x/bg_3@2x.png);
+    background-repeat: no-repeat;
+    z-index: 4;
+    position: relative;
+    background-position: 50% 50%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+.img_4 {
+    background-image: url(img/newMountain/2x/bg_4@2x.png);
+    background-repeat: no-repeat;
+    z-index: 5;
+    position: relative;
+    background-position: 50% -320%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+.img_5 {
+    background-image: url(img/newMountain/2x/bg_5@2x.png);
+    background-repeat: no-repeat;
+    z-index: 7;
+    position: relative;
+    background-position: 50% 100%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+.img_6 {
+    background-image: url(img/newMountain/2x/bg_6@2x.png);
+    background-repeat: no-repeat;
+    z-index: 8;
+    position: relative;
+    background-position: 50% 100%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+.img_7 {
+    background-image: url(img/newMountain/2x/bg_7@2x.png);
+    background-repeat: no-repeat;
+    z-index: 9;
+    position: relative;
+    background-position: 50% 100%;
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+.img_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+} */
