@@ -115,9 +115,9 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    function gyro(e) {
-        let x = e.beta;  
-        let y = e.gamma;
+    function gyro(event) {
+        let x = event.beta;  
+        let y = event.gamma;
 
         if (x >  90) {
              x =  90
@@ -125,6 +125,9 @@ window.addEventListener("DOMContentLoaded", function() {
         if (x < -90) {
              x = -90
         };
+        
+        X += 90;
+        y += 90;
         title.innerHTML = "работает ориентация" + x + "    <<<<x" + y + "    <<<<<<y";
  
         img1.style.transform = `translate3d(${(x - centerX) * 1/100}px, ${(y - e.clientY) * 1/100}px, 0 )`;
