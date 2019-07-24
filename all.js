@@ -129,11 +129,11 @@ window.addEventListener("DOMContentLoaded", function() {
         y += 90;
 //         title.innerHTML = "работает ориентация" + x + "    <<<<x" + y + "    <<<<<<y";
  
-        img1.style.transform = `translate3d(${(y - centerX) * 1/100}px, ${(x - centerY) * 1/100}px, 0 )`;
-        img2.style.transform = `translate3d(${(y - centerX) * 2/100}px, ${(x - centerY) * 2/100}px, 0 )`;
-        img3.style.transform = `translate3d(${(y - centerX) * 3/100}px, ${(x - centerY) * 3/100}px, 0 )`;
-        img4.style.transform = `translate3d(${(y - centerX) * 4/100}px, ${(x - centerY) * 4/100}px, 0 )`;
-        img5.style.transform = `translate3d(${(y - centerX) * 20/100}px, ${(x - centerY) * 20/100}px, 0 )`;
+        img1.style.transform = `translate3d(${(y - centerX) * 10/100}px, ${(x - centerY) * 10/100}px, 0 )`;
+        img2.style.transform = `translate3d(${(y - centerX) * 20/100}px, ${(x - centerY) * 20/100}px, 0 )`;
+        img3.style.transform = `translate3d(${(y - centerX) * 30/100}px, ${(x - centerY) * 30/100}px, 0 )`;
+        img4.style.transform = `translate3d(${(y - centerX) * 40/100}px, ${(x - centerY) * 40/100}px, 0 )`;
+        img5.style.transform = `translate3d(${(y - centerX) * 60/100}px, ${(x - centerY) * 60/100}px, 0 )`;
 
     };
     function gyro2() {
