@@ -135,7 +135,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
     };
 
-if(window.deviceOrientationEvent){
+if(window.DeviceOrientationEvent){
     
     window.addEventListener("deviceorientation", gyro);
 }
