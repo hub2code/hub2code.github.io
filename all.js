@@ -11,8 +11,6 @@ window.addEventListener("DOMContentLoaded", function() {
     let img3 = document.querySelector(".img_3");
     let img4 = document.querySelector(".img_4");
     let img5 = document.querySelector(".img_5");
-//     let img6 = document.querySelector(".img_6");
-//     let img7 = document.querySelector(".img_7");
     let centerX = document.documentElement.clientWidth / 2;
     let centerY = document.documentElement.clientHeight / 2;
     let toggleScript = document.querySelector(".toggleScript");
@@ -136,9 +134,6 @@ window.addEventListener("DOMContentLoaded", function() {
         img5.style.transform = `translate3d(${(y - centerX) * 60/100}px, ${(x - centerY) * 60/100}px, 0 )`;
 
     };
-    function gyro2() {
-        title.innerHTML = orientation.x + "    " + orientation.y;
-    }
 
 if(window.DeviceOrientationEvent){
     
@@ -460,24 +455,24 @@ if(cssWindowWidth <= 768){
         let y = window.scrollY;
 
         if(onescr == false){
-            if(y + 20  > getCoords(section[3]).top  &&  y + 20 < getCoords(section[3]).bottom && start == false) {
+            if(y + centerX/2  > getCoords(section[3]).top  &&  y  + centerX/2  < getCoords(section[3]).bottom && start == false) {
                     movePercentBar();
                 
             }
-            if(y + 20  < getCoords(section[3]).top  ||  y + 20 > getCoords(section[3]).bottom){
+            if(y  + centerX/2   < getCoords(section[3]).top  ||  y  + centerX/2  > getCoords(section[3]).bottom){
                 start = false;
             }
         }
         
         Array.from(section).forEach(function(i, k) {
-            if(y + 20  > getCoords(i).top && y + 20 < getCoords(i).bottom) {
+            if(y + centerX/2  > getCoords(i).top && y + centerX/2 < getCoords(i).bottom) {
                 right[k].classList.add("fadeRight");
                 right[k].classList.add("animated");
                 left[k].classList.add("fadeLeft");
                 left[k].classList.add("animated");
                 right[k].classList.remove("hideRight");
                 left[k].classList.remove("hideLeft");
-            }else{
+            }else if(y + centerX/2  < getCoords(i).top  ||  y + centerX/2 > getCoords(i).bottom){
                 right[k].classList.remove("fadeRight");
                 right[k].classList.remove("animated");
                 left[k].classList.remove("fadeLeft");
