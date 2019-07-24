@@ -204,7 +204,7 @@ object {
     -webkit-user-select: none;
 }
 .btn:last-child {
-    margin-left: auto;
+    margin-left: 10px;
 }
 .btn__cv {
     /* margin-right: auto; */
@@ -250,8 +250,7 @@ section {
 } */
 .project-img {
     cursor: pointer;
-    max-height: auto;
-    max-width: 50vw;
+    max-width: 40vw;
 }
 .section__description {
     display: flex;
@@ -350,20 +349,22 @@ section:nth-child(even) .header__title{
 /* section:nth-child(even) .section__bg-title {
     right: 0;
 } */
-.contact__description {
+/* .contact__description {
     padding-top: 100px;
     padding-bottom: 100px;
-}
+} */
 .contact__description-text {
     /* white-space: pre; */
     position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
     
 }
 .contact__description-text:before {
     content: "{";
     display: block;
     position: absolute;
-    top: -100%;
+    top: 0%;
     left: 0;
     font-size: 80px;
 }
@@ -371,7 +372,7 @@ section:nth-child(even) .header__title{
     content: "}";
     display: block;
     position: absolute;
-    bottom: -100%;
+    bottom: 0;
     left: 0;
     font-size: 80px;
 }
@@ -837,12 +838,13 @@ section:nth-child(even) .header__title{
     section {
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
     }
     section:nth-child(odd) {
-        padding-right: 0;
+        padding: 0;
     }
     section:nth-child(even) {
-        padding-right: 0;
+        padding: 0;
     }
     section:nth-child(odd) .section__img {
         order: unset;
@@ -850,6 +852,49 @@ section:nth-child(even) .header__title{
     .section__description-list:last-child li {
         margin-right: 0;
     }
+    .section__title {
+        font-size: 36px;
+        transform: rotate(-90deg) translate(-50%);
+        left: 0;
+    }
+    .section__header {
+        min-width: auto;
+    }
+    .section__description {
+        max-width: 100%;
+    }
+    .description__skills {
+        width: 80%;
+    }
+    .skills-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: unset;
+        margin-bottom: 10px;
+        /* flex-direction: column; */
+    }
+    .skills-item__svg {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .project-img {
+        max-width: 70vw;
+    }
+    .section__bg-title {
+        font-size: 80px;
+        font-weight: 100;
+        color: rgba(72, 72, 72, 0.6);
+        left: 0;
+        top: 0;
+        transform: translateY(0);
+    }
+    .section__svg {
+        height: auto;
+    }
+
 }
 .navHeight {
     height: 40vh;
