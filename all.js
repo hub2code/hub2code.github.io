@@ -116,8 +116,8 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
     function gyro(e) {
-        let x = event.beta;  
-        let y = event.gamma;
+        let x = e.beta;  
+        let y = e.gamma;
 
         if (x >  90) {
              x =  90
@@ -125,7 +125,8 @@ window.addEventListener("DOMContentLoaded", function() {
         if (x < -90) {
              x = -90
         };
-
+        title.innerHTML = "работает ориентация" + x + "    <<<<x" + y + "    <<<<<<y";
+ 
         img1.style.transform = `translate3d(${(x - centerX) * 1/100}px, ${(y - e.clientY) * 1/100}px, 0 )`;
         img2.style.transform = `translate3d(${(x - centerX) * 2/100}px, ${(y - e.clientY) * 2/100}px, 0 )`;
         img3.style.transform = `translate3d(${(x - centerX) * 3/100}px, ${(y - e.clientY) * 3/100}px, 0 )`;
@@ -134,8 +135,11 @@ window.addEventListener("DOMContentLoaded", function() {
 
     };
 
-
+if(window.deviceOrientationEvent){
+    
     window.addEventListener("deviceorientation", gyro);
+}
+    
 
 
 function fixedNav () {
