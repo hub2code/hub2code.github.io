@@ -4,11 +4,11 @@
     background-position: 50% 100%;
     background-size: cover;
     position: absolute;
-    left: -9vw;
+    left: -0;
     /* top: 3vh; */
     z-index: 1;
-    width: 115vw;
-    height: 110vh;
+    width: 100vw;
+    height: 100vh;
 }
 .img_1 {
     background-image: url(img/2x/bg_1@2x.png);
@@ -16,9 +16,12 @@
     z-index: 2;
     position: absolute;
     background-position: 50% 100%;
-    background-size: 120%;
+    /* background-size: 120%; */
+    background-size: 100%;
     height: 100%;
-    width: 100%;
+    left: -1vw;
+    bottom: -5vh;
+    width: 102vw;
     transform-style: preserve-3d;
 }
 
@@ -26,47 +29,57 @@
     background-image: url(img/2x/bg_2@2x.png);
     background-repeat: no-repeat;
     z-index: 3;
-    position: relative;
+    position: absolute;
     background-position: 50% 100%;
-    background-size: 120%;
+    /* background-size: 120%; */
+    background-size: 100%;
     height: 100%;
-    width: 100%;
+    width: 102vw;
+    left: -2vw;
     transform-style: preserve-3d;
+    bottom: -7vh;
 }
 .img_3 {
     background-image: url(img/2x/bg_3@2x.png);
     background-repeat: no-repeat;
     z-index: 4;
-    position: relative;
+    position: absolute;
     background-position: 50% 100%;
-    background-size: 120%;
+    /* background-size: 120%; */
+    background-size: 100%;
     height: 100%;
-    width: 100%;
+    width: 104vw;
     transform-style: preserve-3d;
+    left: -2vw;
+    bottom: -2vh;
 }
 .img_4 {
     background-image: url(img/2x/bg_4@2x.png);
     background-repeat: no-repeat;
     z-index: 5;
-    position: relative;
+    position: absolute;
     background-position: 50% 100%;
-    background-size: 120%;
+    /* background-size: 120%; */
+    background-size: 100%;
     height: 100%;
-    width: 100%;
+    width: 104vw;
     transform-style: preserve-3d;
+    left: -2vw;
+    bottom: -2vh;
 }
 .img_5 {
     background-image: url(img/2x/bg_front@2x.png);
     background-repeat: no-repeat;
     z-index: 6;
-    position: relative;
+    position: absolute;
     background-position: 50% 100%;
-    background-size: 120%;
+    /* background-size: 120%; */
+    background-size: 100%;
     height: 100%;
-    left: -13vw;
-    bottom: -14vh;
-    width: 142vw;
+    width: 120vw;
     transform-style: preserve-3d;
+    left: -10vw;
+    bottom: -10vh;
 }
 .img_overlay {
     position: absolute;
@@ -190,23 +203,19 @@
 
 @media (max-width: 768px) {
     .img_1 {
-        background-position: 50% 72%;
+        width: 235vw;
     }
     .img_2 {
-        background-position: 50% 79%;
+        width: 235vw;
     }
     .img_3 {
-        background-position: 50% 84%;
+        width: 235vw;
     }
     .img_4 {
-        background-position: 50% 87%;
+        width: 235vw;
     }
     .img_5 {
-        background-position: 50% 73%;
-        background-size: 120%;
-        height: 100%;
-        /* left: -13vw; */
-        bottom: -14vh;
-        width: 238%;
+        width: 235vw;
+        bottom: -15vh;
     }
 }
