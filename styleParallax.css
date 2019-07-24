@@ -207,16 +207,18 @@
     }
     .img_2 {
         width: 235vw;
+        bottom: -12vh;
     }
     .img_3 {
         width: 235vw;
+        bottom: -12vh;
     }
     .img_4 {
         width: 235vw;
-        bottom: -2vh;
+        bottom: -16vh;
     }
     .img_5 {
         width: 235vw;
-        bottom: -17vh;
+        bottom: -23vh;
     }
 }
