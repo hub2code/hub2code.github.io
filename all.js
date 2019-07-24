@@ -37,9 +37,7 @@ window.addEventListener("DOMContentLoaded", function() {
     let width = document.body.clientWidth;
     let offset = document.documentElement.clientWidth;
     let cssWindowWidth = window.innerWidth;
-    console.log(cssWindowWidth);
-    console.log(width);
-    console.log(offset);
+    
 
     let time = 1000;
     let delta = 0;
@@ -117,6 +115,27 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
 
+    function gyro(e) {
+        let x = event.beta;  
+        let y = event.gamma;
+
+        if (x >  90) {
+             x =  90
+        };
+        if (x < -90) {
+             x = -90
+        };
+
+        img1.style.transform = `translate3d(${(x - centerX) * 1/100}px, ${(y - e.clientY) * 1/100}px, 0 )`;
+        img2.style.transform = `translate3d(${(x - centerX) * 2/100}px, ${(y - e.clientY) * 2/100}px, 0 )`;
+        img3.style.transform = `translate3d(${(x - centerX) * 3/100}px, ${(y - e.clientY) * 3/100}px, 0 )`;
+        img4.style.transform = `translate3d(${(x - centerX) * 4/100}px, ${(y - e.clientY) * 4/100}px, 0 )`;
+        img5.style.transform = `translate3d(${(x - centerX) * 20/100}px, ${(y - e.clientY) * 20/100}px, 0 )`;
+
+    };
+
+
+    window.addEventListener("deviceorientation", gyro);
 
 
 function fixedNav () {
@@ -204,6 +223,11 @@ if(cssWindowWidth <= 768){
     }, 1500);
 
     document.documentElement.addEventListener("mousemove", function(e) {
+
+
+
+        // console.log("x:>>" + (centerX  -  e.clientX) + "centerX:" + e.clientX + "... y:>>>" + (e.clientY - centerY) + "centerY:" + e.clientY);
+
 
         img1.style.transform = `translate3d(${(centerX  -  e.clientX) * 1/100}px, ${(e.clientY - centerY) * 1/100}px, 0 )`;
         img2.style.transform = `translate3d(${(centerX  -  e.clientX) * 2/100}px, ${(e.clientY - centerY) * 2/100}px, 0 )`;
