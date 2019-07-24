@@ -125,8 +125,8 @@ window.addEventListener("DOMContentLoaded", function() {
         if (x < -90) {
              x = -90
         };
-        x += 90;
-        y += 90;
+//         x += 90;
+//         y += 90;
         title.innerHTML = "работает ориентация" + x + "    <<<<x" + y + "    <<<<<<y";
  
         // img1.style.transform = `translate3d(${(x - centerX) * 1/100}px, ${(y - e.clientY) * 1/100}px, 0 )`;
