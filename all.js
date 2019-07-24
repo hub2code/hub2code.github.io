@@ -125,22 +125,31 @@ window.addEventListener("DOMContentLoaded", function() {
         if (x < -90) {
              x = -90
         };
-        
-        X += 90;
+        x += 90;
         y += 90;
         title.innerHTML = "работает ориентация" + x + "    <<<<x" + y + "    <<<<<<y";
  
-        img1.style.transform = `translate3d(${(x - centerX) * 1/100}px, ${(y - e.clientY) * 1/100}px, 0 )`;
-        img2.style.transform = `translate3d(${(x - centerX) * 2/100}px, ${(y - e.clientY) * 2/100}px, 0 )`;
-        img3.style.transform = `translate3d(${(x - centerX) * 3/100}px, ${(y - e.clientY) * 3/100}px, 0 )`;
-        img4.style.transform = `translate3d(${(x - centerX) * 4/100}px, ${(y - e.clientY) * 4/100}px, 0 )`;
-        img5.style.transform = `translate3d(${(x - centerX) * 20/100}px, ${(y - e.clientY) * 20/100}px, 0 )`;
+        // img1.style.transform = `translate3d(${(x - centerX) * 1/100}px, ${(y - e.clientY) * 1/100}px, 0 )`;
+        // img2.style.transform = `translate3d(${(x - centerX) * 2/100}px, ${(y - e.clientY) * 2/100}px, 0 )`;
+        // img3.style.transform = `translate3d(${(x - centerX) * 3/100}px, ${(y - e.clientY) * 3/100}px, 0 )`;
+        // img4.style.transform = `translate3d(${(x - centerX) * 4/100}px, ${(y - e.clientY) * 4/100}px, 0 )`;
+        // img5.style.transform = `translate3d(${(x - centerX) * 20/100}px, ${(y - e.clientY) * 20/100}px, 0 )`;
 
     };
+    function gyro2() {
+        title.innerHTML = orientation.x + "    " + orientation.y;
+    }
 
 if(window.DeviceOrientationEvent){
     
     window.addEventListener("deviceorientation", gyro);
+}else if(window.DeviceMotionEvent) {
+    title.innerHTML = "DeviceMotionEvent";
+    window.addEventListener("devicemotion", function(event) {
+        title.innerHTML = " " + event.acceleration.x + "   " + event.acceleration.y;
+    });
+}else  {
+    window.addEventListener("MozOrientation", gyro2);
 }
     
 
