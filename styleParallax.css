@@ -187,3 +187,26 @@
     z-index: 10;
     background-color: rgba(0, 0, 0, .5);
 } */
+
+@media (max-width: 768px) {
+    .img_1 {
+        background-position: 50% 72%;
+    }
+    .img_2 {
+        background-position: 50% 79%;
+    }
+    .img_3 {
+        background-position: 50% 84%;
+    }
+    .img_4 {
+        background-position: 50% 87%;
+    }
+    .img_5 {
+        background-position: 50% 73%;
+        background-size: 120%;
+        height: 100%;
+        /* left: -13vw; */
+        bottom: -14vh;
+        width: 238%;
+    }
+}
