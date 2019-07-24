@@ -134,7 +134,7 @@ function fixedNav () {
 }
 
 if(cssWindowWidth <= 768){
-    toggleScript.style.display = "none";
+//     toggleScript.style.display = "none";
     window.removeEventListener("scroll", fixedNav);
 }else {
     window.addEventListener("scroll", fixedNav);
