@@ -892,7 +892,7 @@ section:nth-child(even) .header__title{
         transform: translateY(0);
     }
     .section__svg {
-        height: auto;
+        height: 100%;
     }
 
 }
